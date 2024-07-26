@@ -32,7 +32,7 @@ let score = document.querySelector('.score');
 function playRound(user, cpu) {
     if (user === cpu) {
         computer.textContent = `Computer picks ${cpu}!`;
-        results.textContent = `DRAW! ${user} equals to ${cpu}.`;
+        results.textContent = `TIE! ${user} equals to ${cpu}.`;
         score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     } else if (user === 'ROCK' && cpu === 'SCISSORS') {
         humanScore += 1;
