@@ -1,14 +1,4 @@
-// THE ROCK-PAPER-SCISSORS GAME - UI - THE ODIN PROJECT
-
-// CREATE 3 BUTTONS, ONE FOR EACH SELECTION (done in the HTML file);
-
-
-// ADD DIV FOR DISPLAYING RESULTS AND USE DOM METHODS INSTEAD OF CONSOLE.LOG;
-// UPDATE THE SCORE UNTIL ONE PLAYER REACHES FIVE WINS;
-
-
-
-// Computer's move:
+// THE ROCK-PAPER-SCISSORS GAME by THE ODIN PROJECT
 
 function getComputerChoice() {
     let cpuPlay = Math.ceil(Math.random() * 3);
@@ -20,8 +10,6 @@ function getComputerChoice() {
         cpu = 'SCISSORS';
     }
 }
-
-// playing a round:
 
 let humanScore = 0;
 let computerScore = 0;
@@ -90,4 +78,3 @@ scissors.addEventListener('click', () => {
     getComputerChoice();
     playRound(user, cpu);
 });
-
