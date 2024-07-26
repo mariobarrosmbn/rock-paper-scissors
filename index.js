@@ -25,30 +25,45 @@ function getComputerChoice() {
 
 let humanScore = 0;
 let computerScore = 0;
+let computer = document.querySelector('.computer');
 let results = document.querySelector('.results');
 let score = document.querySelector('.score');
 
 function playRound(user, cpu) {
     if (user === cpu) {
-        results.textContent = `DRAW! ${user} equals to ${cpu}.`;     
+        computer.textContent = `Computer picks ${cpu}!`;
+        results.textContent = `DRAW! ${user} equals to ${cpu}.`;
+        score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     } else if (user === 'ROCK' && cpu === 'SCISSORS') {
         humanScore += 1;
+        computer.textContent = `Computer picks ${cpu}!`;
         results.textContent = `You win! ${user} beats ${cpu}.`;
+        score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     } else if (user === 'PAPER' && cpu === 'ROCK') {
         humanScore += 1;
+        computer.textContent = `Computer picks ${cpu}!`;
         results.textContent = `You win! ${user} beats ${cpu}.`;
+        score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     } else if (user === 'SCISSORS' && cpu === 'PAPER') {
         humanScore += 1;
+        computer.textContent = `Computer picks ${cpu}!`;
         results.textContent = `You win! ${user} beats ${cpu}.`;
+        score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     } else if (user === 'ROCK' && cpu === 'PAPER'){
         computerScore += 1;
+        computer.textContent = `Computer picks ${cpu}!`;
         results.textContent = `You lose! ${cpu} beats ${user}.`;
+        score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     } else if (user === 'PAPER' && cpu === 'SCISSORS') {
         computerScore += 1;
+        computer.textContent = `Computer picks ${cpu}!`;
         results.textContent = `You lose! ${cpu} beats ${user}.`;
+        score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     } else if (user === 'SCISSORS' && cpu === 'ROCK') {
         computerScore += 1;
+        computer.textContent = `Computer picks ${cpu}!`;
         results.textContent = `You lose! ${cpu} beats ${user}.`;
+        score.textContent = `YOU ${humanScore} x ${computerScore} COMPUTER`;
     }
 }
 

@@ -17,11 +17,19 @@ button {
     font-size: xx-large;
 }
 
-.results {
+.outcome {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.results .score{
     text-align: center;
     background-color: antiquewhite;
     color: blueviolet;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     padding: 15px;
+    margin: 15px;
+    border: 2px dotted lightgreen;
 }
